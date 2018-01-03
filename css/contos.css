@@ -1,0 +1,316 @@
+/* todos */
+*{
+  text-decoration: none;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+html,body{
+  height:100%;
+}
+
+img{
+  height: 100%;
+  width: 100%;
+}
+
+/* classes */
+.container{
+  width: 70%;
+  margin: auto;
+  background-color: #992121;
+}
+
+.escondido{
+  position: absolute;
+  left: -99999px;
+}
+
+/* sistema de grid */
+.row{
+  width: 100%;
+  padding:0px;
+}
+
+.col-1{
+  width: 10%;
+  display: inline-block;
+  padding: none;
+}
+.col-2{
+  width: 20%;
+  display: inline-block;
+  padding: none;
+}
+.col-3{
+  width: 30%;
+  display: inline-block;
+  padding: none;
+}
+.col-4{
+  width: 40%;
+  display: inline-block;
+  padding: none;
+}
+.col-5{
+  width: 50%;
+  display: inline-block;
+  padding: none;
+}
+.col-6{
+  width: 60%;
+  display: inline-block;
+  padding: none;
+}
+.col-7{
+  width: 70%;
+  display: inline-block;
+  padding: none;
+}
+.col-8{
+  width: 80%;
+  display: inline-block;
+  padding: none;
+}
+.col-9{
+  width: 90%;
+  display: inline-block;
+  padding: none;
+}
+.col-10{
+  width: 100%;
+  display: inline-block;
+  padding: none;
+}
+
+.no-padding{
+  padding:0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.teste{
+  height: 10px;
+  background-color: #FFF;
+}
+
+@media screen and (max-width: 992px) {
+
+  #div_menu_superior_mobile{
+    height: 250px;
+    background-color: #000;
+  }
+
+  #div_img_menu{
+    height: 100px;
+    margin-top: 75px;
+  }
+
+  #div_menu_superior{
+    position: absolute;
+    left: -99999px;
+  }
+
+  .opcao_mobile{
+    width: 100%;
+    height: 200px;
+    background-color: #000;
+    font-family: Futura Bk Bt, Arial;
+    font-size: 60px;
+    border-bottom:2px solid #6B6B6B;
+    color: #FFF;
+    line-height: 200px;
+    text-indent: 5%;
+    text-shadow: 1px 1px 1px #FFF;
+  }
+
+
+  .opcao_mobile:hover{
+    background-color: #000;
+    color: #FFF;
+  }
+
+  .opcao_mobile_desktop{
+    position: absolute;
+    left: -99999px;
+  }
+
+  #inicio{
+    margin-top: -20px;
+    height: 700px;
+    background-color: #000;
+    box-shadow: 0px 3px 4px #666;
+    -moz-box-shadow: 0px 3px 4px #666;
+    -webkit-box-shadow: 0px 3px 4px #666;
+  }
+
+  #titulo_pagina{
+    color: #DFDFDF;
+    text-align: center;
+    font-size: 65px;
+    font-family: Futura Bk Bt;
+    font-weight: bold;
+    line-height: 200px;
+  }
+
+  .lateral_mobile{
+    width: 10%; 
+  }
+
+  .meio_mobile{
+    width: 80%;
+  }
+
+  #logo_fenrir{
+    height: auto;
+    width: 100%;
+    margin:auto;
+    display: block;
+  }
+
+  #menu_icon_fenrir{
+    width: 100%;
+  }
+
+  #descricao_pagina{
+    color: #CCC;
+    text-align: justify;
+    font-size: 40px;
+    font-family: Futura Bk Bt;
+    margin-top: 40px;
+  }
+
+  #resumo_inicial{
+    font-size: 24px;
+    margin-top: 100px;
+    font-family: Futura Bk Bt, arial;
+    text-align: justify;
+  }
+
+  footer{
+    margin-top: 100px;
+    height: 100px;
+    background-color: #000;
+  }
+
+  #texto_final{
+    color: #FFF;
+    font-family: Futura Bk Bt, Arial;
+    font-size: 16px;
+    line-height: 100px;
+    text-align: center;
+  }
+
+  #texto_final a{
+    color: #FFF;
+    bottom: 0px;
+  }
+
+
+}
+
+@media screen and (min-width: 993px) {
+  #div_menu_superior_mobile{
+    position: absolute;
+    left: -9999px;
+  }
+
+  #div_menu_superior{
+    height: 100px;
+    background-color: #000;
+  }
+
+  #menu_icon_desktop{
+    height: 30px;
+    width: 30px;
+    margin-top: 25px;
+    float: right;
+    position: absolute;
+  }
+
+  #menu_icon_fenrir{
+    height: 90px;
+    width: auto;
+    margin-top: -10px;
+    display: block;
+    position: absolute;
+  }
+
+
+  .opcao_mobile_desktop{
+    width: 100%;
+    height: 65px;
+    background-color: #333;
+    font-family: Futura Bk Bt, Arial;
+    font-size: 20px;
+    border-bottom:2px solid #6B6B6B;
+    color: #FFF;
+    line-height: 50px;
+    text-align: center;
+    text-shadow: 1px 1px 1px #000;
+    position: relative;
+    display: none;
+  }
+
+  .opcao_mobile_desktop:hover{
+    background-color: #FFF;
+    color: #000;
+  }
+
+  .primeiro{
+    border-top: 2px solid #6B6B6B;
+  }
+
+  #inicio{
+    margin-top: -20px;
+    height: 480px;
+    background-color: #000;
+    box-shadow: 0px 3px 4px #666;
+    -moz-box-shadow: 0px 3px 4px #666;
+    -webkit-box-shadow: 0px 3px 4px #666;
+  }
+
+  #logo_fenrir{
+    height: 300px;
+    width: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    }
+
+  #descricao_pagina{
+    color: #CCC;
+    text-align: justify;
+    font-size: 25px;
+    margin-left: 0px;
+    font-family: Futura Bk Bt,arial;
+    margin-top: 35px;
+  }
+
+  #resumo_inicial{
+    font-size: 24px;
+    margin-top: 100px;
+    font-family: Futura Bk Bt, arial;
+    text-align: justify;
+  }
+
+  footer{
+    margin-top: 100px;
+    height: 100px;
+    background-color: #000;
+  }
+
+  #texto_final{
+    color: #FFF;
+    font-family: Futura Bk Bt, Arial;
+    font-size: 16px;
+    line-height: 100px;
+    text-align: center;
+  }
+
+  #texto_final a{
+    color: #FFF;
+    bottom: 0px;
+  }
+}
