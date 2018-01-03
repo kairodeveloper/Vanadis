@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+html,body{
+  height:100%;
+}
+
 img{
   height: 100%;
   width: 100%;
@@ -133,7 +137,7 @@ img{
 
   #inicio{
     margin-top: -20px;
-    height: 900px;
+    height: 700px;
     background-color: #000;
     box-shadow: 0px 3px 4px #666;
     -moz-box-shadow: 0px 3px 4px #666;
@@ -149,11 +153,31 @@ img{
     line-height: 200px;
   }
 
+  .lateral_mobile{
+    width: 10%; 
+  }
+
+  .meio_mobile{
+    width: 80%;
+  }
+
+  #logo_fenrir{
+    height: auto;
+    width: 100%;
+    margin:auto;
+    display: block;
+  }
+
+  #menu_icon_fenrir{
+    width: 100%;
+  }
+
   #descricao_pagina{
     color: #CCC;
     text-align: justify;
-    font-size: 45px;
+    font-size: 40px;
     font-family: Futura Bk Bt;
+    margin-top: 40px;
   }
 
   #resumo_inicial{
@@ -197,18 +221,21 @@ img{
   }
 
   #menu_icon_desktop{
-    height: 25px;
-    width: 25px;
-    margin-top: 40px;
+    height: 30px;
+    width: 30px;
+    margin-top: 25px;
+    float: right;
+    position: absolute;
   }
 
-  #menu_icon_lupa{
-    float: right;
-    height: 20px;
-    width: 20px;
-    margin-top: 40px;
-    
+  #menu_icon_fenrir{
+    height: 90px;
+    width: auto;
+    margin-top: -10px;
+    display: block;
+    position: absolute;
   }
+
 
   .opcao_mobile_desktop{
     width: 100%;
@@ -245,27 +272,20 @@ img{
 
   #logo_fenrir{
     height: 300px;
-    width: 300px;
+    width: auto;
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: 0px;
     }
 
-  #titulo_pagina{
-    color: #DFDFDF;
-    text-align: center;
-    font-size: 45px;
-    font-family: Futura Bk Bt;
-    font-weight: bold;
-    line-height: 50px;
-  }
-
   #descricao_pagina{
     color: #CCC;
-    text-align: center;
+    text-align: justify;
     font-size: 25px;
+    margin-left: 0px;
     font-family: Futura Bk Bt,arial;
+    margin-top: 35px;
   }
 
   #resumo_inicial{
