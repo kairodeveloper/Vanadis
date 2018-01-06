@@ -1,153 +1,115 @@
-<html>
-<head>
-	<title></title>
-	<style type="text/css">
+<!DOCTYPE html>
 
-		* {margin: 0; padding: 0;}
-body {background: #000}
-a,img {border: none;}
-.trs {-webkit-transition:all ease-out 0.5s;
-    -moz-transition:all ease-out 0.5s;
-    -o-transition:all ease-out 0.5s;
-    -ms-transition:all ease-out 0.5s;
-    transition:all ease-out 0.5s;}  
-#slider {position: relative; z-index: 1;}
-#slider a { position: absolute; top: 0; left: 0; opacity: 0;filter:alpha(opacity=0);}
-.ativo {opacity: 1!important; filter:alpha(opacity=100)!important;}
+<html lang="pt">
 
-/*controladores*/
-span {background: #0190EE; cursor: pointer; opacity: 0;filter:alpha(opacity=0); position: absolute; bottom: 40%; width: 43px; height: 43px; z-index: 5;}
-.next {right: 10px;}
-.next:before,.next:after {left: 21px;}
-.next:before {
-    -webkit-transform: rotate(-42deg);
-    top: 5px;
-}
-.next:after {
-    -webkit-transform: rotate(-132deg);
-    top: 19px;
-}
-.next:before,.next:after,.prev:before,.prev:after {content: "";
-    height: 20px;
-    background: #fff;
-    width: 1px;
-    position: absolute;
-}
-.prev {left: 10px;}
-.prev:before,.prev:after {left: 18px;}
-.prev:before {
-    -webkit-transform: rotate(42deg);
-    top: 5px;
-}
-.prev:after {
-    -webkit-transform: rotate(132deg);
-    top: 19px;
-}
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 
-figure:hover span {opacity: 0.76;filter:alpha(opacity=76);}
-    figure {
-    max-width: 937px;
-    height: 354px;
-    position: relative;
-    overflow: hidden;
-    margin: 50px auto;
-}
 
-figcaption {padding-left: 20px;color: #fff; font-family: "Kaushan Script","Lato","arial"; font-size: 22px; background: rgba(1, 144, 238, 0.76); width: 100%; position: absolute; bottom: 0; left: 0; line-height: 55px; height: 55px; z-index: 5}
+<script type="text/javascript">
+    $(document).ready(function() {
 
-	</style>
-</head>
-<body>
-	<figure>
-	   <span class="trs next"></span>
-	   <span class="trs prev"></span>
+    //seleciona os elementos a com atributo name="modal"
+    $('a[name=modal]').click(function(e) {
+    //cancela o comportamento padrão do link
+    e.preventDefault();
 
-	   <div id="slider">
-	      <a href="#" class="trs"><img src="imagens/loki.jpg" alt="Legenda da imagem 1" /></a>
-	      <a href="#" class="trs"><img src="imagens/odin.jpg" alt="Legenda da imagem 2" /></a>
-	      <a href="#" class="trs"><img src="imagens/frey.jpg" alt="Legenda da imagem 3" /></a>
-	      <a href="#" class="trs"><img src="imagens/sif.jpg" alt="Legenda da imagem 4" /></a>
-	   </div>
+    //armazena o atributo href do link
+    var id = $(this).attr('href');
 
-	   <figcaption></figcaption>
-	</figure>
+    //armazena a largura e a altura da tela
+    var maskHeight = $(document).height();
+    var maskWidth = $(window).width();
 
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-	<script type="text/javascript">
-function setaImagem(){
-    var settings = {
-        primeiraImg: function(){
-            elemento = document.querySelector("#slider a:first-child");
-            elemento.classList.add("ativo");
-            this.legenda(elemento);
-        },
+    //Define largura e altura do div#mask iguais ás dimensões da tela
+    $('#mask').css({'width':maskWidth,'height':maskHeight});
 
-        slide: function(){
-            elemento = document.querySelector(".ativo");
+    //efeito de transição
+    $('#mask').fadeIn(1000);
+    $('#mask').fadeTo("slow",0.8);
 
-            if(elemento.nextElementSibling){
-                elemento.nextElementSibling.classList.add("ativo");
-                settings.legenda(elemento.nextElementSibling);
-                elemento.classList.remove("ativo");
-            }else{
-                elemento.classList.remove("ativo");
-                settings.primeiraImg();
-            }
+    //armazena a largura e a altura da janela
+    var winH = $(window).height();
+    var winW = $(window).width();
+    //centraliza na tela a janela popup
+    $(id).css('top',  winH/2-$(id).height()/2);
+    $(id).css('left', winW/2-$(id).width()/2);
+    //efeito de transição
+    $(id).fadeIn(2000);
+    });
 
-        },
+    //se o botãoo fechar for clicado
+    $('.window .close').click(function (e) {
+    //cancela o comportamento padrão do link
+    e.preventDefault();
+    $('#mask, .window').hide();
+    });
 
-        proximo: function(){
-            clearInterval(intervalo);
-            elemento = document.querySelector(".ativo");
-
-            if(elemento.nextElementSibling){
-                elemento.nextElementSibling.classList.add("ativo");
-                settings.legenda(elemento.nextElementSibling);
-                elemento.classList.remove("ativo");
-            }else{
-                elemento.classList.remove("ativo");
-                settings.primeiraImg();
-            }
-            intervalo = setInterval(settings.slide,4000);
-        },
-
-        anterior: function(){
-            clearInterval(intervalo);
-            elemento = document.querySelector(".ativo");
-
-            if(elemento.previousElementSibling){
-                elemento.previousElementSibling.classList.add("ativo");
-                settings.legenda(elemento.previousElementSibling);
-                elemento.classList.remove("ativo");
-            }else{
-                elemento.classList.remove("ativo");                     
-                elemento = document.querySelector("#slider a:last-child");
-                elemento.classList.add("ativo");
-                this.legenda(elemento);
-            }
-            intervalo = setInterval(settings.slide,4000);
-        },
-
-        legenda: function(obj){
-            var legenda = obj.querySelector("img").getAttribute("alt");
-            document.querySelector("figcaption").innerHTML = legenda;
-        }
-
-    }
-
-    //chama o slide
-    settings.primeiraImg();
-
-    //chama a legenda
-    settings.legenda(elemento);
-
-    //chama o slide à um determinado tempo
-    var intervalo = setInterval(settings.slide,4000);
-    document.querySelector(".next").addEventListener("click",settings.proximo,false);
-    document.querySelector(".prev").addEventListener("click",settings.anterior,false);
-}
-
-window.addEventListener("load",setaImagem,false);
+    //se div#mask for clicado
+    $('#mask').click(function () {
+    $(this).hide();
+    $('.window').hide();
+    });
+    });
 </script>
+
+    <style type="text/css">
+
+*{
+    margin: 0px;
+}
+
+/* O z-index do div#mask deve ser menor que do div#boxes e do div.window */
+#mask {
+    position:absolute;
+    z-index:10;  
+    display:none;
+}
+
+#boxes .window {
+    position:absolute;
+    height:500px;
+    display:none;
+    z-index:15;
+    padding:20px;
+}
+
+/* Personalize a janela modal aqui. Você pode adicionar uma imagem de fundo. */
+#boxes #dialog {
+    width:80%;
+    height:80%;
+    background-color: #FFF; 
+    border-radius:10px;
+    border: 1px solid #000; 
+}
+/* posiciona o link para fechar a janela */
+.close {
+    display:block; 
+    text-align:right;
+}  
+
+    </style>
+    
+<head>
+    <title>teste</title>
+</head>
+
+<body>
+
+<!-- #dialog é o id do DIV definido como mostrado a seguir  -->
+<a href="#dialog" name="modal">Janela Modal Simples</a>
+
+<div id="boxes">
+
+<!-- #personalize sua janela modal aqui -->
+
+<div id="dialog" class="window">
+<b>Teste de Janela Modal</b>
+
+<!-- Botão para fechar a janela tem class="close" -->
+<a href="#" class="close">X</a><br /><br>Janela Modal Simples<br />  <br>Aqui vai o conteúdo da sua Janela Modal Simples.<br></div>
+
+<!-- Não remova o div#mask, pois ele é necessário para preencher toda a janela -->
+<div id="mask"></div>
+</div>
 </body>
 </html>
