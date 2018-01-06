@@ -3,6 +3,7 @@
   text-decoration: none;
   margin: 0px;
   box-sizing: border-box;
+  font-size: 0;
 }
 
 html,body{
@@ -206,6 +207,120 @@ img{
     bottom: 0px;
   }
 
+  #div_conteudo_deuses{
+    height: auto;
+    margin-top:5%;
+  }
+
+  #figure_aesir{
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    margin: 0px auto;
+    margin-left: 0px;
+    z-index: 0;
+    box-shadow: 1px 2px 5px #000;
+  }
+
+  #figure_aesir figcaption{
+    font-family: Futura Bk Bt, Arial;
+    font-size: 34px;
+    color:#FFF;
+    text-align: center;
+    background-color:#000;
+    opacity: 0.7;
+    padding: 2px;
+    box-shadow: 1px 2px 5px #000;
+  }
+
+  #figure_aesir i{
+    font-family: Futura Bk Bt, Arial;
+    font-size: 34px;
+    color:#FFF;
+  }
+
+
+  #figure_vanir{
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    margin: 50px auto;
+    float: right;
+    box-shadow: 1px 2px 5px #000;
+  }
+
+  #figure_vanir figcaption{
+    font-family: Futura Bk Bt, Arial;
+    font-size: 34px;
+    color:#FFF;
+    text-align: center;
+    background-color:#000;
+    opacity: 0.7;
+    padding: 2px;
+    box-shadow: 1px 2px 5px #000;
+  }
+
+  #figure_vanir i{
+    font-family: Futura Bk Bt, Arial;
+    font-size: 34px;
+    color:#FFF;
+  }
+
+  #conteudo_sobre_os_aesir{
+    height: auto;
+    border: 1px solid #CCC;
+    box-shadow: 1px 2px 5px #000;
+    font-size: 16px;
+    padding: 20px;
+    display: block;    
+  }
+
+  #titulo_conteudo_sobre_os_aesir,i,li{
+    font-size: 36px;
+    font-family: Futura Bk Bt, Arial;
+    text-align: center; 
+    list-style-type: none;
+    text-decoration: none;   
+    color:#000;   
+  }
+
+  #titulo_conteudo_sobre_os_aesir{
+    text-align: left;
+    font-weight: bold;
+  }
+
+  #title_i{
+    color:#000;
+  }
+
+  #conteudo_sobre_os_vanir{
+    height: auto;
+    border: 1px solid #CCC;
+    box-shadow: 1px 2px 5px #000;
+    font-size: 16px;
+    padding: 20px;
+    display: block;
+  }
+
+  #titulo_conteudo_sobre_os_vanir,i,li{
+    font-size: 36px;
+    font-family: Futura Bk Bt, Arial;
+    text-align: center; 
+    list-style-type: none;
+    text-decoration: none;  
+  }
+
+
+  #titulo_conteudo_sobre_os_vanir{
+    text-align: left;
+    font-weight: bold;
+  }
+
+  .descricao_deus{
+    font-size: 32px;
+  }
 
 }
 
@@ -223,9 +338,19 @@ img{
   #menu_icon_desktop{
     height: 30px;
     width: 30px;
-    margin-top: 25px;
-    float: right;
-    position: absolute;
+    margin: auto;
+    margin-right: 0px;
+    display: block;
+    margin-top: 35px;
+  }
+
+  #menu_icon_desktop_deuses{
+    height: 30px;
+    width: 30px;
+    margin: auto;
+    margin-right: 0px;
+    display: block;
+    margin-top: -50px;
   }
 
   #menu_icon_fenrir{
@@ -236,6 +361,11 @@ img{
     position: absolute;
   }
 
+  #menu_icon_fenrir_deuses{
+    height: 90px;
+    width: auto;
+    margin-top: 0px;
+  }
 
   .opcao_mobile_desktop{
     width: 100%;
@@ -250,6 +380,7 @@ img{
     text-shadow: 1px 1px 1px #000;
     position: relative;
     display: none;
+    z-index: 5;
   }
 
   .opcao_mobile_desktop:hover{
@@ -268,6 +399,7 @@ img{
     box-shadow: 0px 3px 4px #666;
     -moz-box-shadow: 0px 3px 4px #666;
     -webkit-box-shadow: 0px 3px 4px #666;
+    z-index: 0;
   }
 
   #logo_fenrir{
@@ -277,6 +409,7 @@ img{
     margin-left: auto;
     margin-right: auto;
     margin-top: 0px;
+    z-index: 0;
     }
 
   #descricao_pagina{
@@ -296,9 +429,15 @@ img{
   }
 
   footer{
+    margin:auto;
     margin-top: 100px;
     height: 100px;
     background-color: #000;
+  }
+
+  #footer_deuses{
+    height: 15%;
+    margin-top: 15%;
   }
 
   #texto_final{
@@ -312,11 +451,111 @@ img{
   #texto_final a{
     color: #FFF;
     bottom: 0px;
+    font-size: 16px;
   }
+
+  #div_conteudo_deuses{
+    height: auto;
+    margin-top:5%;
+    margin-bottom: 5%;
+  }
+
+  #figure_aesir{
+    width: 50%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    margin: 0px auto;
+    margin-left: 0px;
+    display: inline-block;
+    z-index: 0;
+    box-shadow: 1px 2px 5px #000;
+  }
+
+  #figure_aesir figcaption{
+    font-family: Futura Bk Bt, Arial;
+    font-size: 16px;
+    color:#FFF;
+    text-align: center;
+    background-color:#000;
+    opacity: 0.7;
+    padding: 2px;
+    box-shadow: 1px 2px 5px #000;
+  }
+
+  #figure_vanir{
+    width: 50%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    margin: 0px auto;
+    float: right;
+    display: inline-block;
+    box-shadow: 1px 2px 5px #000;
+  }
+
+  #figure_vanir figcaption{
+    font-family: Futura Bk Bt, Arial;
+    font-size: 16px;
+    color:#FFF;
+    text-align: center;
+    background-color:#000;
+    opacity: 0.7;
+    padding: 2px;
+    box-shadow: 1px 2px 5px #000;
+  }
+
+  #conteudo_sobre_os_aesir{
+    height: auto;
+    border: 1px solid #CCC;
+    box-shadow: 1px 2px 5px #000;
+    font-size: 16px;
+    padding: 20px;
+    display: block;    
+  }
+
+  #titulo_conteudo_sobre_os_aesir,i,li{
+    font-size: 24px;
+    font-family: Futura Bk Bt, Arial;
+    text-align: center; 
+    list-style-type: none;
+    text-decoration: none;      
+  }
+
+  #titulo_conteudo_sobre_os_aesir{
+    text-align: left;
+    font-weight: bold;
+  }
+
+
+  #conteudo_sobre_os_vanir{
+    height: auto;
+    border: 1px solid #CCC;
+    box-shadow: 1px 2px 5px #000;
+    font-size: 16px;
+    padding: 20px;
+    display: block;
+  }
+
+  #titulo_conteudo_sobre_os_vanir,i,li{
+    font-size: 24px;
+    font-family: Futura Bk Bt, Arial;
+    text-align: center; 
+    list-style-type: none;
+    text-decoration: none;  
+  }
+
+
+  #titulo_conteudo_sobre_os_vanir{
+    text-align: left;
+    font-weight: bold;
+  }
+
+  .descricao_deus{
+    font-size: 16px;
+  }
+
 }
-
-
-/* slide */
 
 #div_slide{
   height:400px; 
@@ -408,14 +647,14 @@ span {
   top: 19px;
 }
 
-figure {
+#figure_slide {
   height: 400px;
   position: relative;
   overflow: hidden;
   margin: 0px auto;
 }
 
-figcaption {
+#figure_slide figcaption {
   padding-left: 20px;
   color: #FFF; 
   font-family: Futura Bk Bt, Arial; 
@@ -430,8 +669,7 @@ figcaption {
   z-index: 5
 } 
 
-figure:hover span {
+#figure_slide:hover span {
   opacity: 0.76;
   filter:alpha(opacity=100);
 }
-
