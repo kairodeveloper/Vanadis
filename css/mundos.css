@@ -3,6 +3,11 @@
   text-decoration: none;
   margin: 0px;
   box-sizing: border-box;
+  font-size: 0;
+}
+
+br{
+  font-size: 16px;
 }
 
 html,body{
@@ -206,6 +211,48 @@ img{
     bottom: 0px;
   }
 
+  #div_titulo{
+    height:80px;
+    margin-top:100px;
+    color:#000;
+  }
+
+  #titulo{
+    font-size:45px;
+    font-family:Futura Bk Bt, Arial;
+  }
+
+  #div_conteudo{
+    height:auto;
+    margin-top:0px;
+    color:#000;
+  }
+
+  #texto_introducao{
+    font-size:38px;
+    font-family:Futura Bk Bt, Arial;
+    width:100%;
+    margin-top:0px;
+    text-align: justify;
+  }
+
+  #yggdrasil{
+    width:100%;
+    float:right;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .fonte_especial_mundo{
+    font-size: 38px;
+  }
+
+  #mundos{
+    font-family:Futura Bk Bt, Arial;
+    font-size: 38px;
+    text-align:justify;
+    width:100%;
+  }
 
 }
 
@@ -221,19 +268,18 @@ img{
   }
 
   #menu_icon_desktop{
-    height: 30px;
+     height: 30px;
     width: 30px;
-    margin-top: 25px;
-    float: right;
-    position: absolute;
+    margin: auto;
+    margin-right: 0px;
+    display: block;
+    margin-top: -50px;
   }
 
   #menu_icon_fenrir{
     height: 90px;
     width: auto;
-    margin-top: -10px;
-    display: block;
-    position: absolute;
+    margin-top: 0px;
   }
 
 
@@ -313,13 +359,48 @@ img{
     color: #FFF;
     bottom: 0px;
   }
+
+  #div_titulo{
+    height:80px;
+    margin-top:100px;
+    color:#000;
+  }
+
+  #titulo{
+    font-size:38px;
+    font-family:Futura Bk Bt, Arial;
+  }
+
+  #div_conteudo{
+    height:auto;
+    margin-top:0px;
+    color:#000;
+    font-size:16px;
+  }
+
+  #texto_introducao{
+    font-size:16px;
+    font-family:Futura Bk Bt, Arial;
+    display: inline-block;
+    width:65%;
+    margin-top:0px;
+    text-align: justify;
+  }
+
+  #mundos{
+    font-family:Futura Bk Bt, Arial;
+    font-size: 16px;
+    text-align:justify;
+    width:60%;
+  }
+
+  #yggdrasil{
+    width:30%;
+    float:right;
+  }
+
+  .fonte_especial_mundo{
+    font-size: 16px;
+  }
+
 }
-
-
-/* slide */
-
-#div_slide{
-  height:400px; 
-  margin-top:100px;
-}
-
