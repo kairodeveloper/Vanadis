@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 var contosTitulos = ["O Surgimento dos mundos","Mímir, o sábio","A construção da muralha de Asgard",
 "Como Odin perdeu o olho direito","Thor e seu criado Thialfi","Thor, Loki e Thialfi em Jotunheim"];
 
@@ -68,3 +69,22 @@ function closeModalByMask() {
   $('.window').hide();
 };
     
+=======
+$(document).ready(function() {
+   
+  $("#menu_icon_desktop").mouseover(function() {
+
+    var elementos = document.getElementsByClassName('opcao_mobile_desktop');
+
+    for (var i = 0; i < elementos.length; i++) {
+      if(elementos[i].style.display=='block'){
+        elementos[i].style.display='none';
+      }else{
+        elementos[i].style.display='block';              
+      }
+    };
+
+  });      
+   
+});
+>>>>>>> 77f66562c776497d8407ea46370a22a9bc33de50

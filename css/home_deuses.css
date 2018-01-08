@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* todos */
 *{
   text-decoration: none;
@@ -727,4 +728,680 @@ span {
 #figure_slide:hover span {
   opacity: 0.76;
   filter:alpha(opacity=100);
+=======
+/* todos */
+*{
+  text-decoration: none;
+  margin: 0px;
+  box-sizing: border-box;
+  font-size: 0;
+}
+
+html,body{
+  height:100%;
+}
+
+img{
+  height: 100%;
+  width: 100%;
+}
+
+/* classes */
+.container{
+  width: 70%;
+  margin: auto;
+  background-color: #992121;
+}
+
+.escondido{
+  position: absolute;
+  left: -99999px;
+}
+
+/* sistema de grid */
+.row{
+  width: 100%;
+  padding:0px;
+}
+
+.col-1{
+  width: 10%;
+  display: inline-block;
+  padding: none;
+}
+.col-2{
+  width: 20%;
+  display: inline-block;
+  padding: none;
+}
+.col-3{
+  width: 30%;
+  display: inline-block;
+  padding: none;
+}
+.col-4{
+  width: 40%;
+  display: inline-block;
+  padding: none;
+}
+.col-5{
+  width: 50%;
+  display: inline-block;
+  padding: none;
+}
+.col-6{
+  width: 60%;
+  display: inline-block;
+  padding: none;
+}
+.col-7{
+  width: 70%;
+  display: inline-block;
+  padding: none;
+}
+.col-8{
+  width: 80%;
+  display: inline-block;
+  padding: none;
+}
+.col-9{
+  width: 90%;
+  display: inline-block;
+  padding: none;
+}
+.col-10{
+  width: 100%;
+  display: inline-block;
+  padding: none;
+}
+
+.no-padding{
+  padding:0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.teste{
+  height: 10px;
+  background-color: #FFF;
+}
+
+@media screen and (max-width: 992px) {
+
+  #div_menu_superior_mobile{
+    height: 250px;
+    background-color: #000;
+  }
+
+  #div_img_menu{
+    height: 100px;
+    margin-top: 75px;
+  }
+
+  #div_menu_superior{
+    position: absolute;
+    left: -99999px;
+  }
+
+  .opcao_mobile{
+    width: 100%;
+    height: 200px;
+    background-color: #000;
+    font-family: Futura Bk Bt, Arial;
+    font-size: 60px;
+    border-bottom:2px solid #6B6B6B;
+    color: #FFF;
+    line-height: 200px;
+    text-indent: 5%;
+    text-shadow: 1px 1px 1px #FFF;
+  }
+
+
+  .opcao_mobile:hover{
+    background-color: #000;
+    color: #FFF;
+  }
+
+  .opcao_mobile_desktop{
+    position: absolute;
+    left: -99999px;
+  }
+
+  #inicio{
+    margin-top: -20px;
+    height: 700px;
+    background-color: #000;
+    box-shadow: 0px 3px 4px #666;
+    -moz-box-shadow: 0px 3px 4px #666;
+    -webkit-box-shadow: 0px 3px 4px #666;
+  }
+
+  #titulo_pagina{
+    color: #DFDFDF;
+    text-align: center;
+    font-size: 65px;
+    font-family: Futura Bk Bt;
+    font-weight: bold;
+    line-height: 200px;
+  }
+
+  .lateral_mobile{
+    width: 10%; 
+  }
+
+  .meio_mobile{
+    width: 80%;
+  }
+
+  #logo_fenrir{
+    height: auto;
+    width: 100%;
+    margin:auto;
+    display: block;
+  }
+
+  #menu_icon_fenrir{
+    width: 100%;
+  }
+
+  #descricao_pagina{
+    color: #CCC;
+    text-align: justify;
+    font-size: 40px;
+    font-family: Futura Bk Bt;
+    margin-top: 40px;
+  }
+
+  #resumo_inicial{
+    font-size: 24px;
+    margin-top: 100px;
+    font-family: Futura Bk Bt, arial;
+    text-align: justify;
+  }
+
+  footer{
+    margin-top: 100px;
+    height: 100px;
+    background-color: #000;
+  }
+
+  #texto_final{
+    color: #FFF;
+    font-family: Futura Bk Bt, Arial;
+    font-size: 16px;
+    line-height: 100px;
+    text-align: center;
+  }
+
+  #texto_final a{
+    color: #FFF;
+    bottom: 0px;
+  }
+
+  #div_conteudo_deuses{
+    height: auto;
+    margin-top:5%;
+  }
+
+  #figure_aesir{
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    margin: 0px auto;
+    margin-left: 0px;
+    z-index: 0;
+    box-shadow: 1px 2px 5px #000;
+  }
+
+  #figure_aesir figcaption{
+    font-family: Futura Bk Bt, Arial;
+    font-size: 34px;
+    color:#FFF;
+    text-align: center;
+    background-color:#000;
+    opacity: 0.7;
+    padding: 2px;
+    box-shadow: 1px 2px 5px #000;
+  }
+
+  #figure_aesir i{
+    font-family: Futura Bk Bt, Arial;
+    font-size: 34px;
+    color:#FFF;
+  }
+
+
+  #figure_vanir{
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    margin: 50px auto;
+    float: right;
+    box-shadow: 1px 2px 5px #000;
+  }
+
+  #figure_vanir figcaption{
+    font-family: Futura Bk Bt, Arial;
+    font-size: 34px;
+    color:#FFF;
+    text-align: center;
+    background-color:#000;
+    opacity: 0.7;
+    padding: 2px;
+    box-shadow: 1px 2px 5px #000;
+  }
+
+  #figure_vanir i{
+    font-family: Futura Bk Bt, Arial;
+    font-size: 34px;
+    color:#FFF;
+  }
+
+  #conteudo_sobre_os_aesir{
+    height: auto;
+    border: 1px solid #CCC;
+    box-shadow: 1px 2px 5px #000;
+    font-size: 16px;
+    padding: 20px;
+    display: block;    
+  }
+
+  #titulo_conteudo_sobre_os_aesir,i,li{
+    font-size: 36px;
+    font-family: Futura Bk Bt, Arial;
+    text-align: center; 
+    list-style-type: none;
+    text-decoration: none;   
+    color:#000;   
+  }
+
+  #titulo_conteudo_sobre_os_aesir{
+    text-align: left;
+    font-weight: bold;
+  }
+
+  #title_i{
+    color:#000;
+  }
+
+  #conteudo_sobre_os_vanir{
+    height: auto;
+    border: 1px solid #CCC;
+    box-shadow: 1px 2px 5px #000;
+    font-size: 16px;
+    padding: 20px;
+    display: block;
+  }
+
+  #titulo_conteudo_sobre_os_vanir,i,li{
+    font-size: 36px;
+    font-family: Futura Bk Bt, Arial;
+    text-align: center; 
+    list-style-type: none;
+    text-decoration: none;  
+  }
+
+
+  #titulo_conteudo_sobre_os_vanir{
+    text-align: left;
+    font-weight: bold;
+  }
+
+  .descricao_deus{
+    font-size: 32px;
+  }
+
+}
+
+@media screen and (min-width: 993px) {
+  #div_menu_superior_mobile{
+    position: absolute;
+    left: -9999px;
+  }
+
+  #div_menu_superior{
+    height: 100px;
+    background-color: #000;
+  }
+
+  #menu_icon_desktop{
+    height: 30px;
+    width: 30px;
+    margin: auto;
+    margin-right: 0px;
+    display: block;
+    margin-top: 35px;
+  }
+
+  #menu_icon_desktop_deuses{
+    height: 30px;
+    width: 30px;
+    margin: auto;
+    margin-right: 0px;
+    display: block;
+    margin-top: -50px;
+  }
+
+  #menu_icon_fenrir{
+    height: 90px;
+    width: auto;
+    margin-top: -10px;
+    display: block;
+    position: absolute;
+  }
+
+  #menu_icon_fenrir_deuses{
+    height: 90px;
+    width: auto;
+    margin-top: 0px;
+  }
+
+  .opcao_mobile_desktop{
+    width: 100%;
+    height: 65px;
+    background-color: #333;
+    font-family: Futura Bk Bt, Arial;
+    font-size: 20px;
+    border-bottom:2px solid #6B6B6B;
+    color: #FFF;
+    line-height: 50px;
+    text-align: center;
+    text-shadow: 1px 1px 1px #000;
+    position: relative;
+    display: none;
+    z-index: 5;
+  }
+
+  .opcao_mobile_desktop:hover{
+    background-color: #FFF;
+    color: #000;
+  }
+
+  .primeiro{
+    border-top: 2px solid #6B6B6B;
+  }
+
+  #inicio{
+    margin-top: -20px;
+    height: 480px;
+    background-color: #000;
+    box-shadow: 0px 3px 4px #666;
+    -moz-box-shadow: 0px 3px 4px #666;
+    -webkit-box-shadow: 0px 3px 4px #666;
+    z-index: 0;
+  }
+
+  #logo_fenrir{
+    height: 300px;
+    width: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    z-index: 0;
+    }
+
+  #descricao_pagina{
+    color: #CCC;
+    text-align: justify;
+    font-size: 25px;
+    margin-left: 0px;
+    font-family: Futura Bk Bt,arial;
+    margin-top: 35px;
+  }
+
+  #resumo_inicial{
+    font-size: 24px;
+    margin-top: 100px;
+    font-family: Futura Bk Bt, arial;
+    text-align: justify;
+  }
+
+  footer{
+    margin:auto;
+    margin-top: 100px;
+    height: 100px;
+    background-color: #000;
+  }
+
+  #footer_deuses{
+    height: 15%;
+    margin-top: 15%;
+  }
+
+  #texto_final{
+    color: #FFF;
+    font-family: Futura Bk Bt, Arial;
+    font-size: 16px;
+    line-height: 100px;
+    text-align: center;
+  }
+
+  #texto_final a{
+    color: #FFF;
+    bottom: 0px;
+    font-size: 16px;
+  }
+
+  #div_conteudo_deuses{
+    height: auto;
+    margin-top:5%;
+    margin-bottom: 5%;
+  }
+
+  #figure_aesir{
+    width: 50%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    margin: 0px auto;
+    margin-left: 0px;
+    display: inline-block;
+    z-index: 0;
+    box-shadow: 1px 2px 5px #000;
+  }
+
+  #figure_aesir figcaption{
+    font-family: Futura Bk Bt, Arial;
+    font-size: 16px;
+    color:#FFF;
+    text-align: center;
+    background-color:#000;
+    opacity: 0.7;
+    padding: 2px;
+    box-shadow: 1px 2px 5px #000;
+  }
+
+  #figure_vanir{
+    width: 50%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    margin: 0px auto;
+    float: right;
+    display: inline-block;
+    box-shadow: 1px 2px 5px #000;
+  }
+
+  #figure_vanir figcaption{
+    font-family: Futura Bk Bt, Arial;
+    font-size: 16px;
+    color:#FFF;
+    text-align: center;
+    background-color:#000;
+    opacity: 0.7;
+    padding: 2px;
+    box-shadow: 1px 2px 5px #000;
+  }
+
+  #conteudo_sobre_os_aesir{
+    height: auto;
+    border: 1px solid #CCC;
+    box-shadow: 1px 2px 5px #000;
+    font-size: 16px;
+    padding: 20px;
+    display: block;    
+  }
+
+  #titulo_conteudo_sobre_os_aesir,i,li{
+    font-size: 24px;
+    font-family: Futura Bk Bt, Arial;
+    text-align: center; 
+    list-style-type: none;
+    text-decoration: none;      
+  }
+
+  #titulo_conteudo_sobre_os_aesir{
+    text-align: left;
+    font-weight: bold;
+  }
+
+
+  #conteudo_sobre_os_vanir{
+    height: auto;
+    border: 1px solid #CCC;
+    box-shadow: 1px 2px 5px #000;
+    font-size: 16px;
+    padding: 20px;
+    display: block;
+  }
+
+  #titulo_conteudo_sobre_os_vanir,i,li{
+    font-size: 24px;
+    font-family: Futura Bk Bt, Arial;
+    text-align: center; 
+    list-style-type: none;
+    text-decoration: none;  
+  }
+
+
+  #titulo_conteudo_sobre_os_vanir{
+    text-align: left;
+    font-weight: bold;
+  }
+
+  .descricao_deus{
+    font-size: 16px;
+  }
+
+}
+
+#div_slide{
+  height:400px; 
+  margin-top:100px;
+}
+
+/*imagens e div*/
+.trs {
+  -webkit-transition:all ease-out 0.5s;
+  -moz-transition:all ease-out 0.5s;
+  -o-transition:all ease-out 0.5s;
+  -ms-transition:all ease-out 0.5s;
+  transition:all ease-out 0.5s;
+}  
+
+#slider {
+  position: relative;
+  z-index: 1;
+}
+
+#slider a { 
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  opacity: 0;
+  width: 100%;  
+  filter:alpha(opacity=0);
+}
+
+.ativo {
+  opacity: 1!important; 
+  filter:alpha(opacity=100)!important;
+}
+
+/*controladores*/
+span {
+  background: #000;
+  cursor: pointer; 
+  opacity: 0;
+  filter:alpha(opacity=0); 
+  position: absolute; 
+  bottom: 40%; 
+  width: 43px; 
+  height: 43px; 
+  z-index: 5;
+}
+
+.next {
+  right: 10px;
+}
+
+.next:before,.next:after {
+  left: 21px;
+}
+
+.next:before {
+  -webkit-transform: rotate(-42deg);
+  top: 5px;
+}
+
+.next:after {
+  -webkit-transform: rotate(-132deg);
+  top: 19px;
+}
+
+.next:before,.next:after,.prev:before,.prev:after {
+  content: "";
+  height: 20px;
+  background: #fff;
+  width: 1px;
+  position: absolute;
+}
+
+.prev {
+  left: 10px;
+}
+
+.prev:before,.prev:after {
+  left: 18px;
+}
+
+.prev:before {
+  -webkit-transform: rotate(42deg);
+  top: 5px;
+}
+
+.prev:after {
+  -webkit-transform: rotate(132deg);
+  top: 19px;
+}
+
+#figure_slide {
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  margin: 0px auto;
+}
+
+#figure_slide figcaption {
+  padding-left: 20px;
+  color: #FFF; 
+  font-family: Futura Bk Bt, Arial; 
+  font-size: 22px; 
+  background: rgba(0, 0, 0, 0.76); 
+  width: 100%; 
+  position: absolute; 
+  bottom: 0; 
+  left: 0; 
+  line-height: 55px; 
+  height: 55px; 
+  z-index: 5
+} 
+
+#figure_slide:hover span {
+  opacity: 0.76;
+  filter:alpha(opacity=100);
+>>>>>>> 77f66562c776497d8407ea46370a22a9bc33de50
 }
