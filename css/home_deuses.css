@@ -322,17 +322,6 @@ img{
     font-size: 32px;
   }
 
-  #div_titulo{
-    height:80px;
-    color:#000;
-  }
-
-  #titulo{
-    font-size:45px;
-    font-family:Futura Bk Bt, Arial;
-  }
-
-
 }
 
 @media screen and (min-width: 993px) {
@@ -565,17 +554,6 @@ img{
   .descricao_deus{
     font-size: 16px;
   }
-
-  #div_titulo{
-    height:80px;
-    color:#000;
-  }
-
-  #titulo{
-    font-size:38px;
-    font-family:Futura Bk Bt, Arial;
-  }
-
 
 }
 
