@@ -68,4 +68,3 @@ function closeModalByMask() {
   $('.window').hide();
 };
     
-
