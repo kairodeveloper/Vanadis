@@ -3,6 +3,7 @@
   text-decoration: none;
   margin: 0px;
   box-sizing: border-box;
+  font-size: 0px;
 }
 
 html,body{
@@ -206,7 +207,176 @@ img{
     bottom: 0px;
   }
 
+  #div_titulo{
+    height:80px;
+    margin-top:50px;
+    color:#000;
+    padding: 0px;
+  }
 
+  #titulo{
+    font-size:45px;
+    font-family:Futura Bk Bt, Arial;
+  }
+  
+  .fonte_especial_mundo{
+    font-size: 16px;
+  }
+
+  #descricao{
+    font-size:38px;
+    font-family: Futura Bk Bt, Arial;
+    color: #000;
+  }
+
+  #div_contos{
+    height:500px;
+    background-color: #000;
+  }
+
+  .caixa_conto{
+    background-color: #EBEBEB;
+    border:1px solid #EBEBEB;
+    height:500px;
+    box-shadow: 1px 2px 3px #000;
+    border-radius:5px;
+    margin-top: 50px;
+  }
+
+  .caixa_conto:hover{
+    transition-duration: 0.4s;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px #000;
+    cursor: pointer;
+  }
+
+  .conto_mobile{
+    width: 100%;
+    height: 1000px;
+  }
+
+  .conto_esquerda{
+    float:left;
+  }
+
+  .conto_meio{ 
+    float:left;
+  }
+
+
+  .conto_direita{
+    float:left;
+  }
+
+  .img_conto{
+    width:100%;
+    height:auto;
+    border-radius: 5px 5px 0px 0px;
+  }
+
+  .div_titulo_conto{
+    width:100%;
+    height: 10%;
+    border:1px solid #EBEBEB;
+  }
+
+  .titulo_conto{
+    width: 100%;
+    font-size:45px;
+    font-weight:bold;
+    padding-left:1%;
+    font-family: Futura Bk Bt, Arial;
+  }
+
+
+  .div_paragrafo_conto{
+    height:auto;
+    border:1px solid #EBEBEB;
+  }
+
+  .paragrafo_conto{
+    width: 100%;
+    text-align:justify;
+    font-size:38px;
+    padding:2%;
+    font-family: Futura Bk Bt, Arial;
+    color: #000;
+  }
+
+  #texto_conto{
+    width: 100%;
+    text-align:justify;
+    font-size:16px;
+    padding:2%;
+    font-family: Futura Bk Bt, Arial;
+    color: #000;
+  }
+
+  #mask {
+    position:absolute;
+    left:0;
+    top:0;
+    z-index:9000;
+    background-color:#000;
+    display:none;
+  }
+    
+  #boxes .window {
+    position:absolute;
+    left:0;
+    top:0;
+    width:440px;
+    height:200px;
+    display:none;
+    z-index:9999;
+  }
+
+  #boxes #dialog {
+    width:60%; 
+    height:500px;
+    background-color:#ffffff;
+    border: 3px solid #FFF;
+    overflow: auto;
+  }
+
+  .link_fake{
+    font-size: 16px;
+    color:#4444FF;
+  }
+
+  #div_titulo_modal{
+    padding:0% 1% 0% 1%;
+    height:40px;
+    border:1px solid #000;
+    background-color:#000;
+
+  }
+
+  #titulo_modal{
+    font-size:32px;
+    font-family: Futura Bk Bt;
+    color:#FFF;
+  }
+
+  #div_fechar_modal{
+    float:right;
+    padding:0px;
+    height:40px;
+    border:1px solid #f44336;
+    background-color:#f44336;
+    font-size:16px;
+  }
+
+  #img_fechar_modal{
+    height:40px;
+    width:auto;
+    margin:auto;
+    display:block;
+  }  
+
+ 
 }
 
 @media screen and (min-width: 993px) {
@@ -221,19 +391,18 @@ img{
   }
 
   #menu_icon_desktop{
-    height: 30px;
+     height: 30px;
     width: 30px;
-    margin-top: 25px;
-    float: right;
-    position: absolute;
+    margin: auto;
+    margin-right: 0px;
+    display: block;
+    margin-top: -50px;
   }
 
   #menu_icon_fenrir{
     height: 90px;
     width: auto;
-    margin-top: -10px;
-    display: block;
-    position: absolute;
+    margin-top: 0px;
   }
 
 
@@ -312,5 +481,172 @@ img{
   #texto_final a{
     color: #FFF;
     bottom: 0px;
+  }
+
+  #div_titulo{
+    height:80px;
+    margin-top:50px;
+    color:#000;
+    padding: 0px;
+  }
+
+  #titulo{
+    font-size:38px;
+    font-family:Futura Bk Bt, Arial;
+  }
+  
+  .fonte_especial_mundo{
+    font-size: 16px;
+  }
+
+  #descricao{
+    font-size:16px;
+    font-family: Futura Bk Bt, Arial;
+    color: #000;
+  }
+
+  #div_contos{
+    height:500px;
+  }
+
+  .caixa_conto{
+    background-color: #EBEBEB;
+    border:1px solid #EBEBEB;
+    height:500px;
+    box-shadow: 1px 2px 3px #000;
+    border-radius:5px;
+    margin-top: 50px;
+  }
+
+  .caixa_conto:hover{
+    transition-duration: 0.4s;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px #000;
+    cursor: pointer;
+  }
+
+  .conto_esquerda{
+    margin-right:3%;
+    float:left;
+  }
+
+  .conto_meio{
+    margin-right:3%;
+    margin-left:2%; 
+  }
+
+
+  .conto_direita{
+    margin-left: 2%;
+    float:right;
+  }
+
+  .img_conto{
+    width:100%;
+    height:auto;
+    border-radius: 5px 5px 0px 0px;
+  }
+
+  .div_titulo_conto{
+    width:100%;
+    height: 20%;
+    border:1px solid #EBEBEB;
+  }
+
+  .titulo_conto{
+    width: 100%;
+    font-size:24px;
+    font-weight:bold;
+    margin-top:20px;
+    padding-left:1%;
+    font-family: Futura Bk Bt, Arial;
+  }
+
+
+  .div_paragrafo_conto{
+    height:auto;
+    border:1px solid #EBEBEB;
+  }
+
+  .paragrafo_conto{
+    width: 100%;
+    text-align:justify;
+    font-size:16px;
+    padding:2%;
+    font-family: Futura Bk Bt, Arial;
+    color: #000;
+  }
+
+  #texto_conto{
+    width: 100%;
+    text-align:justify;
+    font-size:16px;
+    padding:2%;
+    font-family: Futura Bk Bt, Arial;
+    color: #000;
+  }
+
+  #mask {
+    position:absolute;
+    left:0;
+    top:0;
+    z-index:9000;
+    background-color:#000;
+    display:none;
+  }
+    
+  #boxes .window {
+    position:absolute;
+    left:0;
+    top:0;
+    width:440px;
+    height:200px;
+    display:none;
+    z-index:9999;
+  }
+
+  #boxes #dialog {
+    width:60%; 
+    height:500px;
+    background-color:#ffffff;
+    border: 3px solid #FFF;
+    overflow: auto;
+  }
+
+  .link_fake{
+    font-size: 16px;
+    color:#4444FF;
+  }
+
+  #div_titulo_modal{
+    padding:0% 1% 0% 1%;
+    height:40px;
+    border:1px solid #000;
+    background-color:#000;
+
+  }
+
+  #titulo_modal{
+    font-size:32px;
+    font-family: Futura Bk Bt;
+    color:#FFF;
+  }
+
+  #div_fechar_modal{
+    float:right;
+    padding:0px;
+    height:40px;
+    border:1px solid #f44336;
+    background-color:#f44336;
+    font-size:16px;
+  }
+
+  #img_fechar_modal{
+    height:40px;
+    width:auto;
+    margin:auto;
+    display:block;
   }
 }

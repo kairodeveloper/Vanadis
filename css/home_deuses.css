@@ -332,6 +332,12 @@ img{
     font-family:Futura Bk Bt, Arial;
   }
 
+  #descricao{
+    font-size:28px;
+    font-family: Futura Bk Bt, Arial;
+    color: #000;
+    line-height: 10px;
+  }
 
 }
 
@@ -467,7 +473,7 @@ img{
 
   #div_conteudo_deuses{
     height: auto;
-    margin-top:5%;
+    margin-top:50px;
     margin-bottom: 5%;
   }
 
@@ -480,16 +486,28 @@ img{
     margin-left: 0px;
     display: inline-block;
     z-index: 0;
+    opacity: 1;
+    background-color: #FFF;
     box-shadow: 1px 2px 5px #000;
   }
+
+  #figure_aesir:hover{
+    transition-duration: 0.4s;    
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    box-shadow: 0px 0px 9px #000;
+    cursor: pointer;
+    z-index: 10;
+  }
+
 
   #figure_aesir figcaption{
     font-family: Futura Bk Bt, Arial;
     font-size: 16px;
     color:#FFF;
     text-align: center;
-    background-color:#000;
-    opacity: 0.7;
+    background-color:#494949;
     padding: 2px;
     box-shadow: 1px 2px 5px #000;
   }
@@ -502,16 +520,26 @@ img{
     margin: 0px auto;
     float: right;
     display: inline-block;
+    opacity: 1;
+    background-color: #FFF;
     box-shadow: 1px 2px 5px #000;
   }
+
+  #figure_vanir:hover{
+    transition-duration: 0.4s;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    box-shadow: 0px 0px 9px #000;
+    cursor: pointer;
+  }  
 
   #figure_vanir figcaption{
     font-family: Futura Bk Bt, Arial;
     font-size: 16px;
     color:#FFF;
     text-align: center;
-    background-color:#000;
-    opacity: 0.7;
+    background-color:#494949;
     padding: 2px;
     box-shadow: 1px 2px 5px #000;
   }
@@ -576,6 +604,11 @@ img{
     font-family:Futura Bk Bt, Arial;
   }
 
+  #descricao{
+    font-size:16px;
+    font-family: Futura Bk Bt, Arial;
+    color: #000;
+  }
 
 }
 
